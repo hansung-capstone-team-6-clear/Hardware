@@ -35,7 +35,8 @@ strip.begin()
 
 colors = {  # 상태별 색 — app/states.py와 같아야 한다
     "IDLE 초록": Color(0, 255, 0),
-    "LISTENING·THINKING 노랑": Color(255, 180, 0),
+    "LISTENING 노랑": Color(255, 180, 0),
+    "THINKING 흰색": Color(255, 255, 255),
     "SPEAKING 파랑": Color(0, 0, 255),
     "ALERT 주황": Color(255, 80, 0),
     "ERROR 빨강": Color(255, 0, 0),
@@ -50,8 +51,9 @@ for name, color in colors.items():
 
 ## 완료 기준
 
-- [ ] 5가지 색이 순서대로 보이고, 노랑과 주황이 눈으로 구분된다 (안 되면 색값을 조정해 `app/states.py`에 반영)
-- [ ] 점멸(켜기 0.5초 / 끄기 0.5초)도 확인했다
+- [ ] 6가지 색이 순서대로 보이고, 노랑과 주황이 눈으로 구분된다 (안 되면 색값을 조정해 `app/devices/led.py`에 반영)
+- [ ] 점멸(켜기 0.5초 / 끄기 0.5초)과 빠른 점멸(0.15초, ALERT)도 확인했다
+- [ ] THINKING 흰색·ALERT 주황·ERROR 빨강은 제안값이다 — 실물을 보고 디자인 담당과 확정해 결과 기록에 남긴다
 - [ ] 오디오 재생과 LED를 동시에 켜도 소리가 끊기지 않는다
 
 ## 결과 기록

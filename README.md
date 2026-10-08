@@ -3,7 +3,7 @@
 데스크펫 본체(Raspberry Pi 4B) 쪽 레포. 버튼을 누르고 말하면 녹음해서 백엔드로 보내고,
 돌아온 답을 음성·LED·LCD로 보여 준다. 마감 알림도 백엔드에서 받아 먼저 말해 준다.
 
-> 설계 정본은 knowledge 레포 `projects/desk-pet/`다. 하드웨어 범위·리스크는 `hardware/README.md`,
+> 설계 정본은 knowledge 레포 `projects/eureka-desk-pet/`다. 하드웨어 범위·리스크는 `hardware/README.md`,
 > 백엔드와 주고받는 형식은 `contracts.md`. 형식을 바꾸려면 `contracts.md` PR부터 올린다.
 
 ## 이 레포가 하는 일

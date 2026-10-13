@@ -1,0 +1,5 @@
+# 편집기 공통 설정: UTF-8, BOM 없음
+root = true
+
+[*]
+charset = utf-8

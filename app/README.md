@@ -48,7 +48,7 @@ WS 알림   ──▶ ALERT      output.tts 재생 ──▶ IDLE
   굳이 비유하면 `states.py`가 View, `main.py`가 Controller, 백엔드가 Model이다.
 - **부품 코드를 `devices/`에 모은 이유**: 핀·라이브러리가 바뀌어도 `main.py`를 고칠 필요가 없게 하려고.
 
-## 실행
+## 실행 
 
 Pi에서 (처음이면 `../setup/README.md`부터):
 
@@ -69,8 +69,22 @@ cp .env.example .env          # BACKEND_URL=http://localhost:8000
 GPIOZERO_PIN_FACTORY=mock python main.py
 ```
 
-백엔드(`desk-pet-backend`)가 켜져 있으면 `백엔드 WS 연결됨` 로그가 나온다. 꺼져 있으면 3초마다 재연결을 시도한다.
+Windows(PowerShell)에서는 이렇게 실행한다:
 
+```powershell
+cd Hardware\app
+py -m venv .venv
+.venv\Scripts\Activate.ps1      # 막히면: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+pip install -r requirements.txt
+cp .env.example .env            # BACKEND_URL=http://127.0.0.1:8000
+$env:GPIOZERO_PIN_FACTORY="mock"
+python main.py
+```
+
+> Windows에서는 `BACKEND_URL`에 `localhost` 대신 `127.0.0.1`을 쓴다.
+> `localhost`가 IPv6 주소로 먼저 연결되면, 8000번 포트에 떠 있는 다른 서버에서 `HTTP 400`을 받을 수 있다.
+
+백엔드(`desk-pet-backend`)가 켜져 있으면 `백엔드 WS 연결됨` 로그가 나온다. 꺼져 있으면 3초마다 재연결을 시도한다.
 ## 지금 동작하는 것 / 할 일
 
 | 동작함 | TODO (담당: hardware) |

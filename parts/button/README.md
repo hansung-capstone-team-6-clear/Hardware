@@ -36,3 +36,12 @@ pause()
 | 날짜 | 시도한 것 | 결과 | 메모 |
 | --- | --- | --- | --- |
 | | | | |
+
+## 테스트 결과 (2026-10-15)
+
+- 부품: 3핀 버튼 모듈 (GND / VCC / IN)
+- 배선: VCC → Pin 1 (3.3V), GND → Pin 6, IN → Pin 11 (GPIO17)
+- 실행: `python parts/button/test_button.py`
+- 결과: 평소 1, 누르면 0 (active-low). 3회 눌러 3회 모두 정확히 감지, 채터링 없음
+- 앱 코드: `Button(17, pull_up=True)` 사용 가능
+- ⚠️ VCC는 반드시 3.3V (5V 연결 금지)

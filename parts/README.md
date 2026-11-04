@@ -31,7 +31,7 @@
 | --- | --- | --- | --- |
 | ICS-43434 마이크 | BCLK / LRCLK / DATA IN | GPIO18 (12) / GPIO19 (35) / GPIO20 (38) | 3.3V (1), GND (9) |
 | MAX98357A 앰프 | BCLK / LRCLK / DATA OUT | GPIO18 (12) / GPIO19 (35) / GPIO21 (40) | 5V (2), GND (6) |
-| ST7789 LCD | SCLK / MOSI / CS / DC / RST | GPIO11 (23) / GPIO10 (19) / GPIO8 (24) / GPIO24 (18) / GPIO25 (22) | 3.3V (17), GND (14) |
+| ST7789 LCD | SCLK / MOSI / CS / DC / RST / BLK | GPIO11 (23) / GPIO10 (19) / GPIO5 (29) / GPIO24 (18) / GPIO25 (22) / GPIO23 (16) | 3.3V (17), GND (14) |
 | WS2812B LED 링 | DIN | GPIO12 (32) | 5V (4), GND (20) |
 | PTT 버튼 | 입력 (내부 풀업) | GPIO17 (11) | GND (아무 GND 핀) |
 

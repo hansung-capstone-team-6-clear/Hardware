@@ -31,7 +31,7 @@
 - Raspberry Pi 4 Model B (RAM 8GB), 사용자 `clearpick`
 - Python 3.9 이상 (`zoneinfo` 사용)
 - 시스템 의존성: FFmpeg
-- Python 의존성: `requests`, `webrtcvad-wheels` (`requirements.txt`, 버전 미고정)
+- Python 의존성: `requests`, `webrtcvad-wheels` (`requirements.txt`, Pi의 `pip freeze` 기준으로 버전 고정)
 
 ## 설치
 

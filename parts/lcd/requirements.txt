@@ -1,7 +1,4 @@
-# 설치 버전 확인됨
 Adafruit-Blinka==10.1.0
 gpiod==2.6.0
-
-# 버전 미확인 (Pi에서 pip freeze로 확인 후 고정)
-adafruit-circuitpython-rgb-display
-pillow
+adafruit-circuitpython-rgb-display==3.14.6
+pillow==13.0.0

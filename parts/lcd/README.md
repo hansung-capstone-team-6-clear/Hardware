@@ -50,7 +50,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-`requirements.txt`에서 버전을 고정한 두 패키지(Adafruit-Blinka, gpiod)만 설치 버전이 확인된 값이다. 나머지는 Pi에서 `python -m pip freeze`로 확인한 뒤 고정한다.
+`requirements.txt`의 버전은 Pi의 `pip freeze`에서 확인한 값이다 (Python 3.13). 직접 사용하는 패키지만 적었다.
 
 ## 실행
 

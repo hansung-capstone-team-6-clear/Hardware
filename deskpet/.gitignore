@@ -1,0 +1,27 @@
+# 비밀 정보
+.env
+*.env
+!.env.example
+
+# 데이터 (SQLite, 알림 음성, 녹음 파일) — 레포 안에서 DESKPET_HOME을 쓸 때 대비
+*.sqlite3
+*.sqlite3-journal
+*.db
+reminder_audio/
+test_audio/
+*.wav
+*.mp3
+.audio_playback.lock
+
+# 파이썬
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 편집기 / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
